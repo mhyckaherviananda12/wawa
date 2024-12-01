@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Menarik</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .profile-container {
+            width: 100%;
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.8s ease-out;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            background: linear-gradient(to right, #1d3557, #457b9d);
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .profile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .profile-info p strong {
+            font-weight: bold;
+        }
+        .footer-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: bold;
+            color: #1d3557;
+            text-transform: uppercase;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile">
+            <img src="okeee.jpg" alt="Foto Profil">
+            <div class="profile-info">
+                <p><strong>Nama:</strong> Mhycka Herviananda Yuwono</p>
+                <p><strong>NIM:</strong> 24050630001</p>
+                <p><strong>Prodi:</strong> Pendidikan Teknik Mekatronika</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="wawa.jpg" alt="Foto Profil">
+            <div class="profile-info">
+                <p><strong>Nama:</strong> Nasywa Amanda Saputri</p>
+                <p><strong>NIM:</strong> 24050630002</p>
+                <p><strong>Prodi:</strong> Pendidikan Teknik Mekatronika</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        PROGRAM STUDI PENDIDIKAN TEKNIK MEKATRONIKA<br>
+        FAKULTAS TEKNIK<br>
+        UNIVERSITAS NEGERI YOGYAKARTA<br>
+        2024
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahaya dan Edukasi Pengelasan Bawah Laut</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Warna biru muda */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #01579b; /* Warna biru tua solid */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideUp 1.5s ease-out;
+        }
+        .header p {
+            font-size: 1.4em;
+            margin-top: 10px;
+        }
+
+        /* Content Section */
+        .content {
+            margin: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Card Section */
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #01579b; /* Biru tua solid border */
+            border-radius: 8px;
+            width: calc(33% - 40px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Efek hover pada card */
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card .description {
+            padding: 20px;
+            line-height: 1.6;
+            color: #01579b; /* Warna biru gelap */
+        }
+        .card h2 {
+            color: #01579b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        /* Tombol Halaman Selanjutnya */
+        .next-button {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+        .next-button a {
+            text-decoration: none;
+            color: white;
+            background-color: #01579b; /* Biru tua solid pada tombol */
+            padding: 18px 35px;
+            border-radius: 10px;
+            font-size: 1.4em;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih jelas */
+            transition: background-color 0.3s ease;
+            animation: fadeIn 2s ease-out;
+        }
+        .next-button a:hover {
+            background-color: #013f6b; /* Biru lebih gelap pada hover */
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #01579b; /* Biru tua solid */
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Bahaya dan Edukasi Pengelasan Bawah Laut</h1>
+        <p>Meningkatkan Kesadaran dan Pemahaman</p>
+    </div>
+    
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Card 1: Bahaya Kimia -->
+        <div class="card">
+            <img src="gm1.jpg" alt="Bahaya Kimia">
+            <div class="description">
+                <h2>Bahaya Kimia</h2>
+                <p>Gas-gas berbahaya seperti oksida nitrogen dan karbon monoksida dapat terlepas saat proses pengelasan di bawah laut. Paparan yang berlebihan dapat merusak kesehatan penyelam dan lingkungan sekitar.</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Polusi Laut -->
+        <div class="card">
+            <img src="gm2.jpg" alt="Polusi Laut">
+            <div class="description">
+                <h2>Polusi Laut</h2>
+                <p>Pengelasan bawah laut dapat menghasilkan limbah logam dan bahan kimia yang mencemari ekosistem laut, mengancam kehidupan laut seperti ikan dan terumbu karang.</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Edukasi Keamanan -->
+        <div class="card">
+            <img src="gm3.jpg" alt="Edukasi Keamanan">
+            <div class="description">
+                <h2>Edukasi Keamanan</h2>
+                <p>Penting untuk memberikan pelatihan kepada para penyelam dan pekerja tentang penggunaan alat pelindung diri (APD) dan teknik pengelasan yang aman untuk mengurangi risiko bahaya.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol Halaman Selanjutnya -->
+    <div class="next-button">
+        <a href="tiga.html">Halaman Selanjutnya</a>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        Edukasi Pengelasan Bawah Laut.
+    </footer>
+</body>
+</html>
